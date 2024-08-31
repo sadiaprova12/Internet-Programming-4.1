@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Input</title>
+    <style>
+        input[type=text]{
+            width: 70%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            /* box-sizing: border-box; */
+            border: none;
+            border: 1px solid red;
+            outline: none;
+        }
+        input[type=text]{
+            background-color: lightblue;
+        }
+        textarea{
+            width: 80%;
+            height: 150px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 2px solid burlywood;
+            background-color: aqua;
+            color: red;
+            font-size: 20px;
+            resize: none;
+        }
+
+        select{
+            width: 80%;
+            padding: 16px 20px;
+            border: 2px solid red;
+            background-color: azure;
+            border-radius: 4px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="fname" name="fname"><br>
+        
+        <textarea>Some text here.......</textarea>
+
+        <!-- Drop down-->
+         
+<input type="submit">
+    </form>
+</body>
+</html>
