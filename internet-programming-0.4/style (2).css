@@ -1,0 +1,14 @@
+h2{
+    color: red;
+    /* background-color: powderblue; */
+    font-size: 80%;
+    font-family: courier;
+}
+
+p{
+    color: blue;
+}
+
+img{
+    width: 25px;
+}
