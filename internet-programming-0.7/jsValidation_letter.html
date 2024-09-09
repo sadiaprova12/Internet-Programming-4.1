@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Validation_Letter</title>
+    <script>
+        function allLettter(inputText){
+            var letter=/^[A-Za-z]+$/;
+            if(inputText.value.match(letter)){
+                alert("Username accepted");
+                return true;
+            }
+            else {
+                alert("Please input alphabet only");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body onload='document.form1.name.focus()'>
+    <form name="form1" action="#">
+        <div>
+            <label>Name</label>
+            <input type="text" id="name">
+        </div>
+
+        <input type="submit" name="submit"  onclick="allLettter(document.form1.name)" value="Submit">
+       
+
+    </form>
+</body>
+</html>
