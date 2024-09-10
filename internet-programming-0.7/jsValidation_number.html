@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Validation_Letter</title>
+    <script>
+        function allNumber(inputText){
+            var numbers=/^[0-9]+$/;
+            if(inputText.value.match(numbers)){
+                alert("Registation number accepted");
+                return true;
+            }
+            else {
+                alert("Please input numbers only");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body onload='document.form1.name.focus()'>
+    <form name="form1" action="#">
+        <div>
+            <label>Registation Form</label>
+            <input type="text" id="rn">
+        </div>
+
+        <input type="submit" name="submit"  onclick="allNumber(document.form1.rn)" value="Submit">
+       
+
+    </form>
+</body>
+</html>
